@@ -1,0 +1,18 @@
+{
+	"name": "DS_DmiJsonSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "collections/observation/items?limit=10&parameterId=temp_dry&period=latest-10-minutes&bbox=7,54,16,58&sortorder=observed,DESC&api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778"
+			}
+		},
+		"schema": {}
+	}
+}
