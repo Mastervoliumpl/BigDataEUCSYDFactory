@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "collections/observation/items?api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778"
+			"relativeUrl": "collections/observation/items"
 		},
 		"schema": []
 	}
