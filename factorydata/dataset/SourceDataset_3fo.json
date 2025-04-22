@@ -8,12 +8,12 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "collections/observation/items?limit=200&parameterId=temp_dry&period=latest-10-minutes&bbox=7,54,16,58&sortorder=observed,DESC&api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778"
+			"relativeUrl": "collections/observation/items?limit=200&parameterId=temp_dry&period=latest-10-minutes&bbox=7,54,16,58&sortorder=observed,DESC&api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778",
+			"format": {
+				"type": "JsonFormat",
+				"jsonPathDefinition": "$.features"
+			}
 		},
-		"schema": [],
-		"format": {
-			"type": "JsonFormat",
-			"jsonPathDefinition": "$.features"
-		}
+		"schema": []
 	}
 }
