@@ -33,7 +33,84 @@
 						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['features'][0]['geometry']['coordinates'][0]"
+								},
+								"sink": {
+									"name": "Longitude",
+									"type": "Double"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['geometry']['coordinates'][1]"
+								},
+								"sink": {
+									"name": "Latitude",
+									"type": "Double"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['id']"
+								},
+								"sink": {
+									"name": "Id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['created']"
+								},
+								"sink": {
+									"name": "Created",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['observed']"
+								},
+								"sink": {
+									"name": "Observed",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['parameterId']"
+								},
+								"sink": {
+									"name": "ParameterId",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['stationId']"
+								},
+								"sink": {
+									"name": "StationId",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['value']"
+								},
+								"sink": {
+									"name": "Value",
+									"type": "Double"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
@@ -43,7 +120,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_3fo",
+						"referenceName": "SinkDatasetDMI",
 						"type": "DatasetReference"
 					}
 				]
