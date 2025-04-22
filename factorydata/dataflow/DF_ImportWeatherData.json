@@ -15,7 +15,11 @@
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          body as (features as (geometry as (coordinates as double[], type as string), id as string, properties as (created as string, observed as timestamp, parameterId as string, stationId as short, value as double), type as string)[], links as (href as string, rel as string, title as string, type as string)[], numberReturned as short, timeStamp as timestamp, type as string),",
+				"          headers as [string,string]",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     httpMethod: 'GET',",
 				"     timeout: 30,",
