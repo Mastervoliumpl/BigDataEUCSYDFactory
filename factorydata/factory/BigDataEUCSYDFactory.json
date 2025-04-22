@@ -1,0 +1,9 @@
+{
+	"name": "BigDataEUCSYDFactory",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a1235ae0-e0f2-48dc-8d8b-9b0233940fb6",
+		"tenantId": "3045211c-2321-481d-98f2-d95a17e05e9b"
+	}
+}
