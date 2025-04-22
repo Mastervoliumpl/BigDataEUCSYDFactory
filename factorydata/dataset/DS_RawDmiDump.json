@@ -1,0 +1,19 @@
+{
+	"name": "DS_RawDmiDump",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "rawdump.json",
+				"folderPath": "rawdumps/@{pipeline().RunId}",
+				"container": "dmidumps"
+			}
+		}
+	}
+}
