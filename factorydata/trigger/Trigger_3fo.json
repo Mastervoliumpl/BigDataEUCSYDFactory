@@ -1,0 +1,25 @@
+{
+	"name": "Trigger_3fo",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipelineBigData",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2025-04-22T08:56:00Z",
+				"endTime": "2025-04-24T16:56:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
