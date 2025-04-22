@@ -1,0 +1,11 @@
+{
+	"name": "DestinationDataset_3fo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BigDataSQLDBConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable"
+	}
+}
