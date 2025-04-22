@@ -8,5 +8,9 @@
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
+	},
+	"format": {
+		"type": "JsonFormat",
+		"jsonPathDefinition": "$.features"
 	}
 }
