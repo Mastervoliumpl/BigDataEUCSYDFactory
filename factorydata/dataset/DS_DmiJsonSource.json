@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "collections/observation/items?limit=10&parameterId=temp_dry&period=latest-10-minutes&api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778"
+				"relativeUrl": "collections/observation/items?limit=10&api-key=1c456a99-f9c3-4abf-9de4-4ab74c7a0778"
 			}
 		},
 		"schema": {}
